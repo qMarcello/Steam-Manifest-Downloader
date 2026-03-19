@@ -517,7 +517,7 @@ async fn run_download_pipeline(
     let extra_args = if settings.dd_extra_args.is_empty() {
         vec![
             "-max-downloads".to_string(),
-            "8".to_string(),
+            "256".to_string(),
             "-verify-all".to_string(),
         ]
     } else {
